@@ -13,6 +13,10 @@
 		26807B7E1DB9CB3E0069FD07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26807B7C1DB9CB3E0069FD07 /* Main.storyboard */; };
 		26807B801DB9CB3E0069FD07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26807B7F1DB9CB3E0069FD07 /* Assets.xcassets */; };
 		26807B831DB9CB3E0069FD07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26807B811DB9CB3E0069FD07 /* LaunchScreen.storyboard */; };
+		26807B8C1DB9CBA20069FD07 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 26807B8B1DB9CBA20069FD07 /* BaseService.m */; };
+		26807B8F1DB9CEC20069FD07 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26807B8E1DB9CEC20069FD07 /* GameManager.m */; };
+		26807B931DB9CF000069FD07 /* GameAService.m in Sources */ = {isa = PBXBuildFile; fileRef = 26807B921DB9CF000069FD07 /* GameAService.m */; };
+		26807B961DBA18770069FD07 /* BaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26807B951DBA18770069FD07 /* BaseManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		26807B7F1DB9CB3E0069FD07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26807B821DB9CB3E0069FD07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26807B841DB9CB3E0069FD07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26807B8A1DB9CBA20069FD07 /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
+		26807B8B1DB9CBA20069FD07 /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
+		26807B8D1DB9CEC20069FD07 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		26807B8E1DB9CEC20069FD07 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
+		26807B911DB9CF000069FD07 /* GameAService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAService.h; sourceTree = "<group>"; };
+		26807B921DB9CF000069FD07 /* GameAService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAService.m; sourceTree = "<group>"; };
+		26807B941DBA18770069FD07 /* BaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseManager.h; sourceTree = "<group>"; };
+		26807B951DBA18770069FD07 /* BaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		26807B721DB9CB3D0069FD07 /* HierarchyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				26807B901DB9CEDB0069FD07 /* Hierarchy */,
 				26807B761DB9CB3E0069FD07 /* AppDelegate.h */,
 				26807B771DB9CB3E0069FD07 /* AppDelegate.m */,
 				26807B791DB9CB3E0069FD07 /* ViewController.h */,
@@ -75,8 +88,23 @@
 			isa = PBXGroup;
 			children = (
 				26807B741DB9CB3D0069FD07 /* main.m */,
+				26807B8D1DB9CEC20069FD07 /* GameManager.h */,
+				26807B8E1DB9CEC20069FD07 /* GameManager.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26807B901DB9CEDB0069FD07 /* Hierarchy */ = {
+			isa = PBXGroup;
+			children = (
+				26807B8A1DB9CBA20069FD07 /* BaseService.h */,
+				26807B8B1DB9CBA20069FD07 /* BaseService.m */,
+				26807B911DB9CF000069FD07 /* GameAService.h */,
+				26807B921DB9CF000069FD07 /* GameAService.m */,
+				26807B941DBA18770069FD07 /* BaseManager.h */,
+				26807B951DBA18770069FD07 /* BaseManager.m */,
+			);
+			name = Hierarchy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26807B8C1DB9CBA20069FD07 /* BaseService.m in Sources */,
+				26807B931DB9CF000069FD07 /* GameAService.m in Sources */,
 				26807B7B1DB9CB3E0069FD07 /* ViewController.m in Sources */,
+				26807B961DBA18770069FD07 /* BaseManager.m in Sources */,
+				26807B8F1DB9CEC20069FD07 /* GameManager.m in Sources */,
 				26807B781DB9CB3E0069FD07 /* AppDelegate.m in Sources */,
 				26807B751DB9CB3E0069FD07 /* main.m in Sources */,
 			);
